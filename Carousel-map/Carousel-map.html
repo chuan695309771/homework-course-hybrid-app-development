@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body,div,ul,li,a,img{margin: 0;padding: 0;}
+        ul,li{list-style: none;}
+        a{text-decoration: none;}
+        #wrapper{position: relative;margin: 30px auto;width: 400px;height: 200px;}
+        #banner{position:relative;width: 400px;height: 200px;overflow: hidden;}
+        .imgList{position:relative;width:2000px;height:200px;z-index: 10;overflow: hidden;}
+        .imgList li{display: inline;}
+        #prev,
+        #next{position: absolute;top:80px;z-index: 20;cursor: pointer;opacity: 0.2;filter:alpha(opacity=20);}
+        #prev{left: 10px;}
+        #next{right: 10px;}
+        #prev:hover,
+        #next:hover{opacity: 0.5;filter:alpha(opacity=50);}
+        .bg{position: absolute;bottom: 0;width: 400px;height: 40px;z-index:20;opacity: 0.4;filter:alpha(opacity=40);background: black;}
+    </style>
+    <title>轮播</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="banner">
+          <ul class="imgList">
+            <li><a href="#"><img src="img/1.jpg" width="400px" height="200px" alt="puss in boots1"></a></li>
+          <li><a href="#"><img src="img/2.jpg" width="400px" height="200px" alt="puss in boots2"></a></li>
+          <li><a href="#"><img src="img/3.jpg" width="400px" height="200px" alt="puss in boots3"></a></li>
+          <li><a href="#"><img src="img/4.jpg" width="400px" height="200px" alt="puss in boots4"></a></li>
+          <li><a href="#"><img src="img/5.jpg" width="400px" height="200px" alt="puss in boots5"></a></li>
+          </ul>
+          <a id="prev" class="arrow"> &lt </a>
+          <a id="next" class="arrow"> &gt </a>
+          <div class="bg"></div> 
+        </div>
+      </div>
+</body>
+<script>
+    var imgs=document.getElementsByTagName("img");
+    var i=0;
+    function imgTab(){
+		imgs[i%8].style.display='none';
+		i++;
+		imgs[i%8].style.display='block';
+	}
+	var timer=setInterval(function(){
+		imgTab();
+	},1500)
+
+</script>
+</html>
