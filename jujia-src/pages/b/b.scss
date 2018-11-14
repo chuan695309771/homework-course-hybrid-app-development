@@ -1,0 +1,93 @@
+page-b {
+    .my-bg{
+        height: 180px;
+        background-image: url(../../assets/imgs/my-bg.png);
+        background-size:cover;
+        overflow: hidden;
+    }
+    // .my-bg-1{
+    //     height: 100%;
+
+    // }
+    .touxiang{
+            height: 120px;
+            width:120px;
+            overflow: hidden;
+            border-radius: 50%;
+            position: relative;;
+            // padding: 20px 0 0 0;
+            top:30px;  
+            left:120px; 
+        // overflow: hidden;
+        img{
+            width:100%;
+        }
+        
+    }
+    .name{
+        position: absolute;  
+        left:35%; 
+        top:85%;
+        font-size:1.5em;
+    }
+    
+    .content-bg{
+        background-color: #eeeeee;
+    }
+    .sub-0{
+        padding: 0;
+        margin: 0 !important;
+        .subtitle{
+            margin: 0 !important;            
+            width: 750px;
+            height: 50px;
+            background-color: #eeeeee;
+            padding: 0;
+            li{
+               display: inline-block;
+               
+            }
+            .li-1{
+                margin: 15px 0 15px 3%;
+            }
+            .li-2{
+                position: absolute;
+                right:20px;
+                color: #777777;
+                margin: 15px 0 15px 3%;
+            }
+        }
+    }
+    .sub-1{
+        .subtitle-1{
+            margin: 0;
+            // float:left;
+            padding:0;
+            li{
+                padding: 5% 8.5% 5% 8.5%;
+                background-color: white;
+                position: relative;
+                margin: 0 ;
+                display: inline-block;
+                text-align: center;
+                
+            }
+            .fabu{
+                background-color: #ffdb2c;
+            }
+        }
+
+    }
+    .sub-2{
+        
+        .subtitle-2{
+            width: 175px;
+            height: 87px;
+            margin: 5px 1px 0 0;
+            position: relative;
+            padding: 6% 2px 6% 0;
+            background-color: white;
+            text-align: center;
+        }
+    }
+}
